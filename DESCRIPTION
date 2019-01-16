@@ -1,0 +1,21 @@
+Package: sparksf
+Type: Package
+Title: Interface for Spatial functions in Apache Spark
+Version: 0.1.0
+Author: c(
+    person("Etienne", "Racine", email = "etiennebr@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1109-894X"))
+    )
+Maintainer: Etienne B. Racine <etiennebr@gmail.com>
+Description: Extend `sf` to enable spatial functions in Spark using `sparklyr` package
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.1.2)
+Imports:
+    sparklyr,
+    forge (>= 0.1.0.9002)
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat,
+    sf
