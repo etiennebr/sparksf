@@ -23,5 +23,5 @@ library(sparksf)
 library(sparklyr)
 library(dplyr)
 
-try(sc <- spark_connect(master = "local"))
+sc <- spark_connect(master = "local")
 ```
