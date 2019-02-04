@@ -6,7 +6,7 @@ Author: c(
     person("Etienne", "Racine", email = "etiennebr@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1109-894X"))
     )
 Maintainer: Etienne B. Racine <etiennebr@gmail.com>
-Description: Extend `sf` to enable spatial functions in Spark using `sparklyr` package
+Description: Extend `sf` to enable spatial functions in Spark using `sparklyr` package.
 License: Apache License (>= 2.0)
 Encoding: UTF-8
 LazyData: true
@@ -19,4 +19,6 @@ Suggests:
     testthat,
     purrr,
     glue,
-    sf
+    DBI,
+    sf,
+    utils

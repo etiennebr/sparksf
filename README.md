@@ -23,5 +23,11 @@ library(sparksf)
 library(sparklyr)
 library(dplyr)
 
-sc <- spark_connect(master = "local")
+sc <- spark_connect(master = "local") %>% 
+  register_geomesa()
+
+pt <- DBI::dbGetQuery(sc, "SELECT st_geomfromwkt('POINT(1 1)')")
+pt
+#>   st_geomfromwkt(POINT(1 1))
+#> 1   <environment: 0x5d99770>
 ```

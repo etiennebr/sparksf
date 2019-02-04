@@ -2,10 +2,13 @@
 % Please edit documentation in R/dependecies.R
 \name{register_geomesa}
 \alias{register_geomesa}
-\title{on connect}
+\title{Register geomesa extension}
 \usage{
 register_geomesa(sc)
 }
+\arguments{
+\item{sc}{Spark Connection.}
+}
 \description{
-on connect
+Register geomesa extension
 }
